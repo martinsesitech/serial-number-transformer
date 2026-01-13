@@ -1,0 +1,9 @@
+services:
+  serial-transformer:
+    build: .
+    container_name: serial-transformer
+    stdin_open: true  # Keep STDIN open for interactive input
+    tty: true         # Allocate a pseudo-TTY for interactive terminal
+    volumes:
+      - ./:/app
+    command: python serial_transformer.py

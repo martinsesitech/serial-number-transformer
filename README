@@ -1,0 +1,60 @@
+### Step 1: Install Docker Desktop for Mac
+
+1. Download Docker Desktop from [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
+
+
+### Step 2: Verify Docker Installation
+
+Open Terminal and run:
+
+```bash
+docker --version
+docker compose version
+```
+
+You should see version numbers for both commands.
+
+## Installation
+
+### Step 1: Clone or This Project
+git clone <your-repo-url>
+cd serial-number
+
+### Step 2: Make Scripts Executable
+
+```bash
+chmod +x run.sh
+```
+
+## Usage
+
+### First Time
+
+```bash
+./run.sh build   #build + run
+```
+
+This will:
+- Build the Docker image
+- Start the interactive CLI
+
+### Subsequent Runs
+
+```bash
+./run.sh build   #run
+```
+
+This is faster as it skips the build step.
+
+### Manual Commands
+
+If you prefer not to use scripts:
+
+```bash
+# Build the image
+docker compose build
+
+# Run the program
+docker compose run --rm serial-transformer
+```
+
