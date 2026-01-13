@@ -1,6 +1,4 @@
-### Step 1: Install Docker Desktop for Mac
-
-1. Download Docker Desktop from [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
+### Step 1: Install Docker Desktop
 
 
 ### Step 2: Verify Docker Installation
@@ -57,4 +55,5 @@ docker compose build
 # Run the program
 docker compose run --rm serial-transformer
 ```
+
 
