@@ -1,30 +1,47 @@
 # Serial Number Transformer
-1. **Install Docker Desktop**
-   - [Download for Mac](https://docs.docker.com/desktop/setup/install/mac-install/)
-2. **Verify Docker Installation**
-    - Open Terminal and run:
-    ```bash
-    docker --version
-    docker compose version
-    ```
-    You should see version numbers for both Docker and Docker compose. If not Docker Desktop wasn't installed . 
 
-3. **Clone repo**
-    ```bash
-    git clone https://github.com/martinsesitech/serial-number-transformer.git
-    cd serial-number-transformer
-    ```
+1. **Install Docker Desktop**
+
+   Download and install Docker Desktop for macOS:  
+   https://docs.docker.com/desktop/setup/install/mac-install/
+
+2. **Verify Docker Installation**
+
+   Open Terminal and run:
+
+   ```bash
+   docker --version
+   docker compose version
+   ```
+
+   You should see version numbers for both Docker and Docker Compose. If not, Docker Desktop was not installed correctly.
+
+3. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/martinsesitech/serial-number-transformer.git
+   cd serial-number-transformer
+   ```
+
 4. **Make the Run Script Executable**
-    ```bash
-    chmod +x run.sh
-    ```
-5. **First Time Setup (build and run)**
-    ```bash
-    ./run.sh build
-    ```
-    Builds the container and starts the CLI program
+
+   ```bash
+   chmod +x run.sh
+   ```
+
+5. **First-Time Setup (Build and Run)**
+
+   ```bash
+   ./run.sh build
+   ```
+
+   This builds the Docker container and starts the CLI program.
+
 6. **Subsequent Runs**
-    ```bash
-    ./run.sh
-    ```
-    Skips the build and runs the program but only when the container has been built at least once.
+
+   ```bash
+   ./run.sh
+   ```
+
+   This skips the build step and runs the program, assuming the container has already been built at least once.
+
